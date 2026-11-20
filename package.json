@@ -1,0 +1,20 @@
+{
+  "name": "aoknotes-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AOKnotes — Local-first cross-platform notes app (Web, Mobile, Personal PC Sync & Pluggable Cloud)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@aoknotes/core && npm run build --workspace=@aoknotes/pc-daemon && npm run build --workspace=@aoknotes/web",
+    "test": "npm run test --workspace=@aoknotes/core && npm run test --workspace=@aoknotes/pc-daemon",
+    "dev:web": "npm run dev --workspace=@aoknotes/web",
+    "dev:daemon": "npm run start --workspace=@aoknotes/pc-daemon",
+    "dev:mobile": "npm run start --workspace=@aoknotes/mobile"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

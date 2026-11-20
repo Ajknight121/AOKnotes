@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "AOKnotes",
+    "slug": "aoknotes",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aoknotes.mobile",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "AOKnotes uses FaceID to unlock your encrypted Safe notes."
+      }
+    },
+    "android": {
+      "package": "com.aoknotes.mobile",
+      "permissions": ["USE_BIOMETRIC", "USE_FINGERPRINT"]
+    }
+  }
+}
