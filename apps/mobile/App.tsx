@@ -99,7 +99,7 @@ export default function App() {
     displayName: 'Personal PC',
     enabled: true,
     autoSyncWhenAvailable: true,
-    endpointUrl: 'http://192.168.1.100:4545',
+    endpointUrl: 'http://192.168.1.32:4545',
     encryptBeforeUpload: false,
   });
 

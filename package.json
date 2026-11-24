@@ -12,7 +12,8 @@
     "test": "npm run test --workspace=@aoknotes/core && npm run test --workspace=@aoknotes/pc-daemon",
     "dev:web": "npm run dev --workspace=@aoknotes/web",
     "dev:daemon": "npm run start --workspace=@aoknotes/pc-daemon",
-    "dev:mobile": "npm run start --workspace=@aoknotes/mobile"
+    "dev:mobile": "npm run start --workspace=@aoknotes/mobile",
+    "dev:mobile:tunnel": "npm run tunnel --workspace=@aoknotes/mobile"
   },
   "devDependencies": {
     "typescript": "~6.0.3"
